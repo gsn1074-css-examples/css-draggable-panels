@@ -1,0 +1,54 @@
+$borderColor: gray;
+$borderStyle: solid 7px $borderColor;
+$backgroundColor: #024d6b;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: $borderColor;
+    font-family: Helvetica, sans-serif;
+}
+
+.handle {			
+    position: absolute;
+    top: 50%;
+    right:-35px;
+    width: 50px;
+    height: 50px;
+    background-color: $backgroundColor;
+    border: $borderStyle;
+    border-radius: 5px;
+    transform: rotate(45deg);
+}
+
+.panel {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:100%;
+    width: 33%;
+    padding-top: 3em;
+}
+
+#panel1 {
+    padding-left: 0%;  
+    border-right: $borderStyle;
+    background-color: $backgroundColor;
+}
+
+#panel2 {
+    padding-left: 33.331%; 
+    border-right: $borderStyle;
+    background-color: $backgroundColor;
+}
+
+#panel3 {
+    padding-left: 66%;  
+    background-color: $backgroundColor;
+}
